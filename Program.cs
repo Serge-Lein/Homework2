@@ -46,31 +46,31 @@
 
 //Task13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
- void GiveMeTheThirdDigitPieceOfIronGarbage(int num)
-{
-    if (num < 100)
-    {
-        Console.WriteLine($"Your number {num} is not three-digit.\nPlease restart the programm and enter another number");
-    }
-    else
-    {
-        int tempNum = num;
-        int lastDigit = 0;
-        int reversNum = 0;
-        while(tempNum > 0)
-        {
-            lastDigit = num % 10;
-            reversNum = reversNum * 10 + lastDigit;
-            tempNum = tempNum / 10;
-        }
-        Console.WriteLine($"Your number is {num}.\nThe third digit is {reversNum / 100 % 10}");
-    }
-}
+//  void GiveMeTheThirdDigitPieceOfIronGarbage(int num)
+// {
+//     if (num < 100)
+//     {
+//         Console.WriteLine($"Your number {num} is not three-digit.\nPlease restart the programm and enter another number");
+//     }
+//     else
+//     {
+//         int tempNum = num;
+//         int lastDigit = 0;
+//         int reversNum = 0;
+//         while(tempNum > 0)
+//         {
+//             lastDigit = num % 10;
+//             reversNum = reversNum * 10 + lastDigit;
+//             tempNum = tempNum / 10;
+//         }
+//         Console.WriteLine($"Your number is {num}.\nThe third digit is {reversNum / 100 % 10}");
+//     }
+// }
 
-Console.Write("Input your number: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input your number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-GiveMeTheThirdDigitPieceOfIronGarbage(num);
+// GiveMeTheThirdDigitPieceOfIronGarbage(num);
 
 
 
